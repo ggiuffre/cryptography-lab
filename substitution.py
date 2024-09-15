@@ -5,7 +5,10 @@ import sys
 from interfaces import Cypher
 
 
-ALPHABET = [chr(c) for c in range(ord('a'), ord('z') + 1)]
+ALPHABET = (
+    [chr(c) for c in range(ord('A'), ord('Z') + 1)] + 
+    [chr(c) for c in range(ord('a'), ord('z') + 1)]
+)
 
 
 class SubstitutionCypher(Cypher):
